@@ -1,6 +1,8 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.EjerLaboratorio1;
+
 import java.lang.String;
-public class TestCircle {
+
+public class main {
     /**
      * A Test Driver for the Circle class
      */
@@ -22,8 +24,8 @@ public class TestCircle {
                 + c2.getRadius() + " and area of " + c2.getArea());
         //The circle has radius of 2.0 and area of 12.566370614359172
         Circle c3 = new Circle(12.00);
-        String color= c3.setColor("blue");
-        System.out.println("The circle has a color of " +color+" "+"and a radius of " + c3.getRadius());
+        String color = c3.setColor("blue");
+        System.out.println("The circle has a color of " + color + " " + "and a radius of " + c3.getRadius());
 
         Circle c4 = new Circle(); // construct an instance of Circle
         c4.setRadius(5.5); // change radius
@@ -41,3 +43,4 @@ public class TestCircle {
 
     }
 }
+
