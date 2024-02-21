@@ -1,5 +1,5 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
-
+package es.uah.matcomp.mp.e1.ejerciciosclases.EjerLaboratorio1;
+import java.lang.String;
 public class Circle {
     private double radius;
     private String color;
@@ -13,8 +13,8 @@ public class Circle {
 
     /** Constructs a Circle instance with the given radius and default color */
     public Circle(double r) { // 2nd constructor
-        radius = r;
-        color = "red";
+        this.radius = r;
+
     }
     public Circle (double r, String c) {
         radius = r;
@@ -33,11 +33,15 @@ public class Circle {
     public double getArea() {
         return radius*radius*Math.PI;
     }
-    public void getRadius(double newRadius) {
-        radius=newRadius;
+    public void setRadius(double newRadius) {
+        this.radius=newRadius;
     }
 
-    public void setColor(String newColor) {
+    public String setColor(String newColor) {
         color = newColor;
+        return color;
+    }
+    public String toString() {
+        return "Circle[radius=" + radius + " color=" + color + "]";
     }
 }

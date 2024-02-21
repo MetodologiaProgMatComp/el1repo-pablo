@@ -1,5 +1,5 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
-
+package es.uah.matcomp.mp.e1.ejerciciosclases.EjerLaboratorio1;
+import java.lang.String;
 public class TestCircle {
     /**
      * A Test Driver for the Circle class
@@ -21,9 +21,23 @@ public class TestCircle {
         System.out.println("The circle has radius of "
                 + c2.getRadius() + " and area of " + c2.getArea());
         //The circle has radius of 2.0 and area of 12.566370614359172
-        Circle c3 = new Circle(12, "azul");
-        String color= c3.getColor();
+        Circle c3 = new Circle(12.00);
+        String color= c3.setColor("blue");
         System.out.println("The circle has a color of " +color+" "+"and a radius of " + c3.getRadius());
+
+        Circle c4 = new Circle(); // construct an instance of Circle
+        c4.setRadius(5.5); // change radius
+        System.out.println("radius is: " + c4.getRadius()); // Print radius via getter
+        c4.setColor("green"); // Change color
+        System.out.println("color is: " + c4.getColor()); // Print color via getter
+
+        Circle c5 = new Circle(5.5);
+        System.out.println(c5.toString());
+
+        Circle c6 = new Circle(6.6, "violet");
+        System.out.println(c6.toString());
+        System.out.println(c6);
+        System.out.println("Operator '+' invokes toString() too: " + c6);
 
     }
 }
