@@ -17,10 +17,11 @@ public class Main {
         System.out.println("Author's name is: " + dummyBook.getAuthor().getName());
         System.out.println("Author's email is: " + dummyBook.getAuthor().getEmail());
 // Use an anonymous instance of Author to construct a Book instance
-        Book anotherBook = new Book("more Java",new Author("Paul Tan", "paul@somewhere.com", 'm'), 29.95);
+        Book anotherBook = new Book("more Java", new Author("Paul Tan", "paul@somewhere.com", 'm'), 29.95);
         System.out.println(anotherBook); // toString()
         //Introduzco mejoras propuestas
-        System.out.println("Author's name is: "+anotherBook.getAuthor().getName());
-        System.out.println("Author's email is: "+anotherBook.getAuthor().getEmail());
+        System.out.println("Author's name is: "+anotherBook.getAuthorName());
+        System.out.println("Author's email is: "+anotherBook.getAuthorEmail());
+        System.out.println("Author's gender is: "+anotherBook.getAuthorGender());
     }
 }
