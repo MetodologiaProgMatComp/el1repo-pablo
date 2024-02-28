@@ -26,7 +26,5 @@ public class MyPoint {
     public void setY(int y) {
         this.y = y;
     }
-    public getXY(){
 
-    }
 }
