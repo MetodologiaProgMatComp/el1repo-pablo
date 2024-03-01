@@ -26,5 +26,34 @@ public class MyPoint {
     public void setY(int y) {
         this.y = y;
     }
+    public int[] getXY(){
+        int[] coord= new int[]{x,y};
+        return coord;
+    }
+    public void setXY(int x, int y){
+        this.x=x;
+        this.y=y;
+    }
+    public String toString(){
+        return "("+x+","+y+")";
+    }
+    public double distance(int x, int y){
+        double ancho = x - this.x;
+        double alto = y - this.y;
+        double distance = Math.sqrt(ancho*ancho+alto*alto);
+        return distance;
+    }
+    public double distance(MyPoint another){
+        double ancho= another.getX() - this.x;
+        double alto = another.getY() - this.y;
+        double distance = Math.sqrt(ancho*ancho+alto*alto);
+        return distance;
+    }
+    public double distance(){
+        double ancho = -x;
+        double alto = -y;
+        double distance = Math.sqrt(ancho*ancho+alto*alto);
+        return distance;
+    }
 
 }
