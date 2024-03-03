@@ -60,6 +60,11 @@ public class MyCircle {
         return Math.PI*radius*radius;
     }
     public double getCircumference(){
-
+        return 2*Math.PI*radius;
+    }
+    public double distance(MyCircle another){
+        MyPoint centro= getCenter();
+        MyPoint centro2= another.getCenter();
+        return centro.distance(centro2);
     }
 }
