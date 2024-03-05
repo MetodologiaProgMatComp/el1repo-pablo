@@ -5,8 +5,6 @@ public class Rectangle {
     private Float length=1.0f;
     private Float width=1.0f;
     public Rectangle() {
-        this.length= length;
-        this.width=width;
     }
     public Rectangle(Float l, Float w) {
         this.length= l;
