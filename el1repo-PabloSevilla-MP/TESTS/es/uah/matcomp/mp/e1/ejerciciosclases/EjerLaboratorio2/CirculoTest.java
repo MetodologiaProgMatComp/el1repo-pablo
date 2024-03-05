@@ -41,5 +41,7 @@ class CirculoTest {
 
     @org.junit.jupiter.api.Test
     void testToString() {
+        Circulo c1 = new Circulo(5);
+        assertEquals("Circle[radius= 5.0]", c1.toString());
     }
 }

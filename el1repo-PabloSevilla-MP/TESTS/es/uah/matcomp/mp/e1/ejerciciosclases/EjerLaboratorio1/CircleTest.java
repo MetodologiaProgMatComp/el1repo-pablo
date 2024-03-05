@@ -43,5 +43,6 @@ class CircleTest {
     @org.junit.jupiter.api.Test
     void testToString() {
         Circle c1 = new Circle(3);
+        assertEquals("Circle[radius=3.0 color=null]", c1.toString());
     }
 }
